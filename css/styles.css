@@ -158,6 +158,37 @@ figcaption {
   color: #6e5a4f;
 }
 
+.content-narrow {
+  max-width: 720px;
+  width: 100%;
+}
+
+.content-form {
+  max-width: 600px;
+  width: 100%;
+}
+
+.text-center-aurora {
+  text-align: center;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-group {
+  display: inline-flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.label-normal {
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -493,6 +524,10 @@ figcaption {
   color: #6e5a4f;
   font-size: 0.95rem;
   margin-bottom: 0.75rem;
+}
+.card-aurora--icon {
+  text-align: center;
+  border-top: 3px solid #c75a2a;
 }
 .card-aurora .card-img-top {
   width: 100%;
