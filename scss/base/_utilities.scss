@@ -2,6 +2,7 @@
 //   Clases utilitarias generadas con @each
 // ==========================================
 
+@use 'sass:map';
 @use '../abstracts/variables' as *;
 
 // Generar clases de color de texto con @each
@@ -30,6 +31,39 @@ $spacing-scale: (1, 2, 3, 4, 5);
 
 .text-muted-aurora {
   color: $ca-muted;
+}
+
+// Layout utilities (reemplazan inline styles)
+.content-narrow {
+  max-width: 720px;
+  width: 100%;
+}
+
+.content-form {
+  max-width: 600px;
+  width: 100%;
+}
+
+.text-center-aurora {
+  text-align: center;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-group {
+  display: inline-flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+// Label sin transformacion (para checkboxes)
+.label-normal {
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-size: map.get($font-sizes, "base");
 }
 
 // Animaciones

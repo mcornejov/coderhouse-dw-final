@@ -38,6 +38,12 @@
     margin-bottom: 0.75rem;
   }
 
+  // Variante sin imagen (solo icono o texto)
+  &--icon {
+    text-align: center;
+    border-top: 3px solid $ca-primary;
+  }
+
   // Soporte para clases Bootstrap existentes (carousel cards, etc.)
   .card-img-top {
     width: 100%;
