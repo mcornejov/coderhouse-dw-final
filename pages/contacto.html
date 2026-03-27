@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Aurora — Contacto, horarios y ubicacion</title>
+  <meta name="description" content="Contacta a Cafe Aurora: formulario, preguntas frecuentes, horarios de atencion y como llegar. Reservas, eventos y consultas.">
+  <meta name="keywords" content="contacto cafeteria, reservas cafe, eventos privados, horarios cafeteria, ubicacion cafe aurora">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cafe Aurora — Contacto y ubicacion">
+  <meta property="og:description" content="Escribinos para reservas, eventos o consultas. Av. Principal 123, abierto de lunes a domingo.">
+  <meta property="og:image" content="../img/local.jpg">
+  <meta property="og:type" content="website">
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Navegacion -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-aurora sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../img/logo.svg" alt="Logo Cafe Aurora" height="36">
+        Cafe Aurora
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+              aria-controls="navPrincipal" aria-expanded="false"
+              aria-label="Abrir menu de navegacion">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navPrincipal" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Formulario de contacto -->
+    <section id="formulario" class="section-aurora">
+      <div class="container">
+        <h1 class="section-title">Contacto</h1>
+        <div class="flex-aurora flex-aurora--center">
+          <div style="max-width: 600px; width: 100%;">
+            <p style="text-align: center; margin-bottom: 1.5rem;">Escribinos para reservas, eventos o consultas generales. Tambien podes enviarnos un mail directo a <a href="mailto:hola@cafeaurora.com">hola@cafeaurora.com</a>.</p>
+
+            <form action="#" method="post" class="form-aurora">
+              <fieldset>
+                <legend class="visually-hidden">Datos de contacto</legend>
+
+                <div class="form-aurora__group">
+                  <label for="nombre" class="form-aurora__label">Nombre y apellido</label>
+                  <input type="text" class="form-aurora__input" id="nombre" name="nombre"
+                         placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-aurora__group">
+                  <label for="email" class="form-aurora__label">Correo electronico</label>
+                  <input type="email" class="form-aurora__input" id="email" name="email"
+                         placeholder="tu@email.com" required>
+                </div>
+
+                <div class="form-aurora__group">
+                  <label for="telefono" class="form-aurora__label">Telefono (opcional)</label>
+                  <input type="tel" class="form-aurora__input" id="telefono" name="telefono"
+                         placeholder="(011) 555-0000">
+                </div>
+
+                <div class="form-aurora__group">
+                  <label for="motivo" class="form-aurora__label">Motivo</label>
+                  <select class="form-aurora__select" id="motivo" name="motivo" required>
+                    <option value="" selected disabled>Selecciona un motivo</option>
+                    <option value="reserva">Reserva de mesa</option>
+                    <option value="evento">Evento privado</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="sugerencia">Sugerencia</option>
+                  </select>
+                </div>
+
+                <div class="form-aurora__group">
+                  <label for="mensaje" class="form-aurora__label">Mensaje</label>
+                  <textarea class="form-aurora__textarea" id="mensaje" name="mensaje" rows="5"
+                            placeholder="Contanos tu idea o consulta" required></textarea>
+                </div>
+
+                <div class="form-aurora__check">
+                  <input type="checkbox" id="newsletter" name="newsletter">
+                  <label for="newsletter" style="text-transform: none; letter-spacing: normal; font-weight: 400; font-size: 0.95rem;">
+                    Quiero recibir novedades por correo
+                  </label>
+                </div>
+
+              </fieldset>
+
+              <button type="submit" class="btn-aurora" style="width: 100%;">Enviar mensaje</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preguntas frecuentes — details/summary nativo -->
+    <section id="faq" class="section-aurora section-aurora--alt">
+      <div class="container">
+        <h2 class="section-title">Preguntas frecuentes</h2>
+        <div class="flex-aurora flex-aurora--center">
+          <div class="faq-aurora" style="max-width: 720px; width: 100%;">
+
+            <details class="faq-aurora__item">
+              <summary class="faq-aurora__question">Se puede reservar mesa?</summary>
+              <div class="faq-aurora__answer">
+                Si, realizamos reservas con 24 horas de anticipacion. Podes escribirnos por el formulario de arriba o llamar directamente al local.
+              </div>
+            </details>
+
+            <details class="faq-aurora__item">
+              <summary class="faq-aurora__question">Tienen opciones sin cafe?</summary>
+              <div class="faq-aurora__answer">
+                Ofrecemos te, jugos naturales e infusiones de temporada. Consulta nuestra <a href="menu.html">carta completa</a> para ver las opciones disponibles.
+              </div>
+            </details>
+
+            <details class="faq-aurora__item">
+              <summary class="faq-aurora__question">Hacen eventos privados?</summary>
+              <div class="faq-aurora__answer">
+                Si, tenemos un espacio para eventos de hasta 25 personas. Escribinos con los detalles de tu evento y te armamos una propuesta a medida.
+              </div>
+            </details>
+
+            <details class="faq-aurora__item">
+              <summary class="faq-aurora__question">Aceptan medios de pago digitales?</summary>
+              <div class="faq-aurora__answer">
+                Aceptamos efectivo, tarjetas de debito y credito, y billeteras virtuales como Mercado Pago.
+              </div>
+            </details>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ubicacion -->
+    <section id="ubicacion" class="section-aurora">
+      <div class="container">
+        <h2 class="section-title">Donde estamos</h2>
+        <div class="grid-aurora grid-aurora--2cols">
+          <figure>
+            <img src="../img/local.jpg" class="img-responsive" alt="Personas en cafeteria">
+            <figcaption style="text-align: center;">
+              Zona centro, cerca de la plaza principal. Foto: <a href="https://www.freepik.es/foto-gratis/gente-cafeteria_3276284.htm">Freepik</a>
+            </figcaption>
+          </figure>
+          <div>
+            <h3>Horarios</h3>
+            <ul class="horarios-list">
+              <li class="horarios-list__item">
+                <span class="horarios-list__dia">Lunes a viernes</span>
+                <span class="horarios-list__hora">08:00 a 20:00</span>
+              </li>
+              <li class="horarios-list__item">
+                <span class="horarios-list__dia">Sabados</span>
+                <span class="horarios-list__hora">09:00 a 21:00</span>
+              </li>
+              <li class="horarios-list__item">
+                <span class="horarios-list__dia">Domingos</span>
+                <span class="horarios-list__hora">10:00 a 18:00</span>
+              </li>
+            </ul>
+            <address>
+              <p><strong>Direccion:</strong> Av. Principal 123, Ciudad</p>
+              <p><strong>Telefono:</strong> (011) 555-1234</p>
+              <p><strong>Email:</strong> <a href="mailto:hola@cafeaurora.com">hola@cafeaurora.com</a></p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-aurora">
+    <div class="container">
+      <div class="grid-aurora grid-aurora--3cols">
+        <div>
+          <h5>Cafe Aurora</h5>
+          <p>Un espacio calido para compartir cafe de especialidad, pasteleria artesanal y buena musica.</p>
+        </div>
+        <div>
+          <h5>Navegacion</h5>
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contacto</h5>
+          <address>
+            <p>Av. Principal 123, Ciudad</p>
+            <p>Tel: (011) 555-1234</p>
+            <p><a href="mailto:hola@cafeaurora.com">hola@cafeaurora.com</a></p>
+          </address>
+        </div>
+      </div>
+      <hr>
+      <p class="footer__copy">&copy; 2026 Cafe Aurora. Imagenes: Freepik. Musica: Pixabay.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
