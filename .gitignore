@@ -1,0 +1,22 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.kate-swp
+*.swp
+*~
+
+# Dependencias
+node_modules/
+
+# SASS cache
+.sass-cache/
+*.css.map
+
+# Archivos temporales
+*.tmp
+*.bak
+*.log
