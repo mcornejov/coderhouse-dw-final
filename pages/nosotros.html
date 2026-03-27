@@ -18,6 +18,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- AOS — Animate on Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <!-- Estilos propios -->
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -62,7 +64,7 @@
 
     <!-- Hero de pagina -->
     <section class="page-hero">
-      <img src="../img/local.jpg" class="page-hero__img" alt="Interior de Cafe Aurora con personas disfrutando">
+      <img src="../img/granos.jpg" class="page-hero__img" alt="Granos de cafe tostado de origen unico">
       <div class="page-hero__overlay">
         <h1>Nuestra historia</h1>
         <p>Conoce como nacio Cafe Aurora y lo que nos mueve cada dia.</p>
@@ -74,12 +76,12 @@
       <div class="container">
         <h2 class="section-title">Como empezo todo</h2>
         <div class="grid-aurora grid-aurora--sidebar">
-          <article class="fade-in-up">
+          <article data-aos="fade-up">
             <p>Cafe Aurora nacio en 2023 como un proyecto familiar en el corazon del barrio. La idea era simple: crear un espacio donde el cafe fuera mas que una bebida, un motivo para encontrarse, conversar y hacer una pausa en la rutina.</p>
             <p>Empezamos con una maquina, un punadoo de recetas y muchas ganas. Hoy, tres anos despues, seguimos con la misma filosofia: ingredientes honestos, procesos cuidados y un trato cercano con cada persona que cruza la puerta.</p>
             <p>Nuestro nombre viene de esas primeras mananas de prueba, cuando tostavamos granos antes del amanecer. Aurora era el momento en que todo comenzaba a tener sentido.</p>
           </article>
-          <aside class="aside-aurora">
+          <aside class="aside-aurora" data-aos="fade-left" data-aos-delay="150">
             <h3>Hitos</h3>
             <ul>
               <li>2023 — Apertura del local</li>
@@ -98,19 +100,19 @@
       <div class="container">
         <h2 class="section-title">Nuestra filosofia</h2>
         <div class="grid-aurora grid-aurora--3cols">
-          <article class="card-aurora card-aurora--icon fade-in-up">
+          <article class="card-aurora card-aurora--icon" data-aos="fade-up">
             <div class="card-aurora__body">
               <h3 class="card-aurora__title">Origen directo</h3>
               <p class="card-aurora__text">Trabajamos con productores de Colombia, Brasil y Etiopia. Compramos cafe verde de cosechas recientes y tostamos en lotes pequenos para garantizar frescura.</p>
             </div>
           </article>
-          <article class="card-aurora card-aurora--icon fade-in-up">
+          <article class="card-aurora card-aurora--icon" data-aos="fade-up" data-aos-delay="150">
             <div class="card-aurora__body">
               <h3 class="card-aurora__title">Proceso artesanal</h3>
               <p class="card-aurora__text">Cada taza se prepara al momento. Usamos metodos manuales como V60, aeropress y prensa francesa porque creemos que la paciencia se nota en el sabor.</p>
             </div>
           </article>
-          <article class="card-aurora card-aurora--icon fade-in-up">
+          <article class="card-aurora card-aurora--icon" data-aos="fade-up" data-aos-delay="300">
             <div class="card-aurora__body">
               <h3 class="card-aurora__title">Comunidad</h3>
               <p class="card-aurora__text">Mas que una cafeteria, somos un punto de encuentro. Organizamos catas, talleres de latte art y eventos culturales para el barrio.</p>
@@ -125,19 +127,19 @@
       <div class="container">
         <h2 class="section-title">El equipo</h2>
         <div class="grid-aurora grid-aurora--3cols">
-          <article class="team-card fade-in-up">
+          <article class="team-card" data-aos="fade-up">
             <div class="team-card__avatar" aria-hidden="true">MC</div>
             <h3 class="team-card__name">Martin Cornejo</h3>
             <p class="team-card__role">Fundador y tostador</p>
             <p class="team-card__bio">Apasionado por los granos de origen unico y la extraccion manual. Formo el concepto de Aurora desde el primer tueste.</p>
           </article>
-          <article class="team-card fade-in-up">
+          <article class="team-card" data-aos="fade-up" data-aos-delay="150">
             <div class="team-card__avatar" aria-hidden="true">LR</div>
             <h3 class="team-card__name">Lucia Ramirez</h3>
             <p class="team-card__role">Barista principal</p>
             <p class="team-card__bio">Especialista en latte art y metodos de filtrado. Siempre buscando el equilibrio perfecto entre acidez y dulzura.</p>
           </article>
-          <article class="team-card fade-in-up">
+          <article class="team-card" data-aos="fade-up" data-aos-delay="300">
             <div class="team-card__avatar" aria-hidden="true">SP</div>
             <h3 class="team-card__name">Sofia Perez</h3>
             <p class="team-card__role">Pastelera</p>
@@ -153,7 +155,7 @@
         <h2 class="section-title">Lo que nos define</h2>
         <div class="flex-aurora flex-aurora--center">
           <div style="max-width: 720px; text-align: center;">
-            <blockquote class="blockquote-aurora">
+            <blockquote class="blockquote-aurora" data-aos="zoom-in">
               <p>"El cafe bueno no necesita adornos. Solo necesita tiempo, atencion y buena compania."</p>
               <footer>— Equipo Aurora</footer>
             </blockquote>
@@ -224,12 +226,15 @@
         </div>
       </div>
       <hr>
-      <p class="footer__copy">&copy; 2026 Cafe Aurora. Imagenes: Freepik. Musica: Pixabay.</p>
+      <p class="footer__copy">&copy; 2026 Cafe Aurora. Imagenes: Freepik y Pexels. Musica: Pixabay.</p>
     </div>
   </footer>
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- AOS init -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
 </body>
 </html>

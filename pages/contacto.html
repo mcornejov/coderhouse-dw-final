@@ -18,6 +18,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- AOS — Animate on Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <!-- Estilos propios -->
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -68,7 +70,7 @@
           <div style="max-width: 600px; width: 100%;">
             <p style="text-align: center; margin-bottom: 1.5rem;">Escribinos para reservas, eventos o consultas generales. Tambien podes enviarnos un mail directo a <a href="mailto:hola@cafeaurora.com">hola@cafeaurora.com</a>.</p>
 
-            <form action="#" method="post" class="form-aurora">
+            <form action="#" method="post" class="form-aurora" data-aos="fade-up">
               <fieldset>
                 <legend class="visually-hidden">Datos de contacto</legend>
 
@@ -129,7 +131,7 @@
       <div class="container">
         <h2 class="section-title">Preguntas frecuentes</h2>
         <div class="flex-aurora flex-aurora--center">
-          <div class="faq-aurora" style="max-width: 720px; width: 100%;">
+          <div class="faq-aurora" style="max-width: 720px; width: 100%;" data-aos="fade-up">
 
             <details class="faq-aurora__item">
               <summary class="faq-aurora__question">Se puede reservar mesa?</summary>
@@ -169,8 +171,8 @@
       <div class="container">
         <h2 class="section-title">Donde estamos</h2>
         <div class="grid-aurora grid-aurora--2cols">
-          <figure>
-            <img src="../img/local.jpg" class="img-responsive" alt="Personas en cafeteria">
+          <figure data-aos="fade-right">
+            <img src="../img/interior.jpg" class="img-responsive" alt="Interior calido de Cafe Aurora">
             <figcaption style="text-align: center;">
               Zona centro, cerca de la plaza principal. Foto: <a href="https://www.freepik.es/foto-gratis/gente-cafeteria_3276284.htm">Freepik</a>
             </figcaption>
@@ -231,12 +233,15 @@
         </div>
       </div>
       <hr>
-      <p class="footer__copy">&copy; 2026 Cafe Aurora. Imagenes: Freepik. Musica: Pixabay.</p>
+      <p class="footer__copy">&copy; 2026 Cafe Aurora. Imagenes: Freepik y Pexels. Musica: Pixabay.</p>
     </div>
   </footer>
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- AOS init -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
 </body>
 </html>

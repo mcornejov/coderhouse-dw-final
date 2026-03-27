@@ -18,6 +18,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- AOS — Animate on Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <!-- Estilos propios -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -117,12 +119,12 @@
       <div class="container">
         <h2 class="section-title">Sobre nosotros</h2>
         <div class="grid-aurora grid-aurora--sidebar">
-          <article class="fade-in-up">
+          <article data-aos="fade-up">
             <p>Nacimos en el barrio con la idea de crear un punto de encuentro para quienes disfrutan el cafe bien hecho. Trabajamos con productores locales y buscamos un servicio simple y cercano.</p>
             <p>Cada taza es el resultado de un proceso cuidadoso: desde la seleccion del grano hasta el metodo de preparacion. Nos gusta lo artesanal, lo pausado y lo genuino.</p>
             <a href="pages/contacto.html" class="btn-aurora btn-aurora--outline">Escribinos</a>
           </article>
-          <aside class="aside-aurora">
+          <aside class="aside-aurora" data-aos="fade-left" data-aos-delay="150">
             <h3>Datos rapidos</h3>
             <ul>
               <li>Origen del cafe: Colombia</li>
@@ -140,7 +142,7 @@
       <div class="container">
         <h2 class="section-title">Especialidades de la casa</h2>
         <div class="grid-aurora grid-aurora--3cols">
-          <article class="card-aurora">
+          <article class="card-aurora" data-aos="fade-up">
             <img src="img/producto-1.jpg" class="card-aurora__img" alt="Capuccino con pastel de chocolate">
             <div class="card-aurora__body">
               <h3 class="card-aurora__title">Capuccino clasico</h3>
@@ -148,7 +150,7 @@
               <a href="pages/menu.html#cafes" class="btn-aurora">Ver en menu</a>
             </div>
           </article>
-          <article class="card-aurora">
+          <article class="card-aurora" data-aos="fade-up" data-aos-delay="150">
             <img src="img/producto-2.jpg" class="card-aurora__img" alt="Pasteleria y cafe sobre mesa de madera">
             <div class="card-aurora__body">
               <h3 class="card-aurora__title">Tostado artesanal</h3>
@@ -156,8 +158,8 @@
               <a href="pages/menu.html#pasteleria" class="btn-aurora">Ver en menu</a>
             </div>
           </article>
-          <article class="card-aurora">
-            <img src="img/local.jpg" class="card-aurora__img" alt="Personas en cafeteria">
+          <article class="card-aurora" data-aos="fade-up" data-aos-delay="300">
+            <img src="img/interior.jpg" class="card-aurora__img" alt="Interior calido de cafeteria con decoracion de madera">
             <div class="card-aurora__body">
               <h3 class="card-aurora__title">Experiencia Aurora</h3>
               <p class="card-aurora__text">Musica suave, mesas amplias y un ambiente pensado para que te quedes un rato mas.</p>
@@ -175,7 +177,7 @@
         <div class="flex-aurora flex-aurora--center">
           <div style="max-width: 720px; text-align: center;">
             <p>Seleccionamos granos con perfiles dulces y tostados medios para lograr tazas equilibradas. Cada cafe es una invitacion a frenar y disfrutar.</p>
-            <blockquote class="blockquote-aurora">
+            <blockquote class="blockquote-aurora" data-aos="zoom-in">
               <p>"El mejor cafe se comparte en calma, con una charla larga y una mesa simple."</p>
               <footer>— Equipo Aurora</footer>
             </blockquote>
@@ -230,12 +232,15 @@
         </div>
       </div>
       <hr>
-      <p class="footer__copy">&copy; 2026 Cafe Aurora. Imagenes: Freepik. Musica: Pixabay.</p>
+      <p class="footer__copy">&copy; 2026 Cafe Aurora. Imagenes: Freepik y Pexels. Musica: Pixabay.</p>
     </div>
   </footer>
 
   <!-- Bootstrap JS Bundle (incluye Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- AOS init -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
 </body>
 </html>

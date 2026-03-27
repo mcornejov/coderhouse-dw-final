@@ -18,6 +18,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- AOS — Animate on Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <!-- Estilos propios -->
   <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -62,7 +64,7 @@
 
     <!-- Hero de pagina -->
     <section class="page-hero">
-      <img src="../img/hero.jpg" class="page-hero__img" alt="Interior de cafeteria con mesas de madera">
+      <img src="../img/interior.jpg" class="page-hero__img" alt="Interior calido de cafeteria con muebles de madera">
       <div class="page-hero__overlay">
         <h1>Galeria</h1>
         <p>Momentos, espacios y detalles que hacen a Cafe Aurora.</p>
@@ -74,25 +76,29 @@
       <div class="container">
         <h2 class="section-title">Nuestro espacio</h2>
         <div class="galeria-grid">
-          <figure class="galeria-item galeria-item--wide">
-            <img src="../img/hero.jpg" loading="lazy" alt="Vista panoramica del interior de Cafe Aurora con mesas de madera y decoracion calida">
+          <figure class="galeria-item galeria-item--wide" data-aos="fade-up">
+            <img src="../img/interior.jpg" loading="lazy" alt="Interior calido de cafeteria con muebles de madera y ambiente acogedor">
             <figcaption>El salon principal — mesas amplias y luz natural</figcaption>
           </figure>
-          <figure class="galeria-item">
-            <img src="../img/local.jpg" loading="lazy" alt="Personas conversando y disfrutando cafe en el local">
-            <figcaption>Momentos compartidos en la barra</figcaption>
+          <figure class="galeria-item" data-aos="fade-up" data-aos-delay="100">
+            <img src="../img/barista.jpg" loading="lazy" alt="Barista preparando latte art con leche vaporizada">
+            <figcaption>Latte art hecho al momento por nuestros baristas</figcaption>
           </figure>
-          <figure class="galeria-item">
+          <figure class="galeria-item" data-aos="fade-up" data-aos-delay="200">
+            <img src="../img/granos.jpg" loading="lazy" alt="Granos de cafe tostado de origen seleccionado">
+            <figcaption>Granos de origen, tostados en lotes pequenos</figcaption>
+          </figure>
+          <figure class="galeria-item" data-aos="fade-up" data-aos-delay="100">
+            <img src="../img/pasteleria.jpg" loading="lazy" alt="Croissants y pasteleria artesanal recien horneada">
+            <figcaption>Pasteleria fresca del dia</figcaption>
+          </figure>
+          <figure class="galeria-item" data-aos="fade-up" data-aos-delay="200">
             <img src="../img/producto-1.jpg" loading="lazy" alt="Capuccino con arte latte junto a pastel de chocolate">
             <figcaption>Capuccino con latte art y brownie de cacao</figcaption>
           </figure>
-          <figure class="galeria-item">
-            <img src="../img/producto-2.jpg" loading="lazy" alt="Seleccion de pasteleria artesanal sobre mesa de madera">
-            <figcaption>Pasteleria fresca del dia</figcaption>
-          </figure>
-          <figure class="galeria-item galeria-item--wide">
-            <img src="../img/local.jpg" loading="lazy" alt="Ambiente del cafe durante la tarde con luz calida">
-            <figcaption>Tardes tranquilas con buena musica y cafe filtrado</figcaption>
+          <figure class="galeria-item galeria-item--wide" data-aos="fade-up">
+            <img src="../img/evento.jpg" loading="lazy" alt="Grupo de personas disfrutando en un evento en la cafeteria">
+            <figcaption>Eventos y encuentros en nuestro espacio privado</figcaption>
           </figure>
         </div>
       </div>
@@ -103,24 +109,24 @@
       <div class="container">
         <h2 class="section-title">Eventos y actividades</h2>
         <div class="grid-aurora grid-aurora--3cols">
-          <article class="card-aurora fade-in-up">
-            <img src="../img/producto-1.jpg" class="card-aurora__img" alt="Taza de cafe con espuma decorada durante una cata">
+          <article class="card-aurora" data-aos="fade-up">
+            <img src="../img/barista.jpg" class="card-aurora__img" alt="Barista sirviendo cafe durante una cata guiada">
             <div class="card-aurora__body">
               <h3 class="card-aurora__title">Catas de cafe</h3>
               <p class="card-aurora__text">Una vez al mes organizamos degustaciones guiadas de origenes y metodos de extraccion. Cupos limitados.</p>
               <a href="contacto.html" class="btn-aurora btn-aurora--outline">Reservar lugar</a>
             </div>
           </article>
-          <article class="card-aurora fade-in-up">
-            <img src="../img/producto-2.jpg" class="card-aurora__img" alt="Mesa preparada con ingredientes para taller de pasteleria">
+          <article class="card-aurora" data-aos="fade-up" data-aos-delay="150">
+            <img src="../img/pasteleria.jpg" class="card-aurora__img" alt="Ingredientes frescos para taller de pasteleria artesanal">
             <div class="card-aurora__body">
               <h3 class="card-aurora__title">Talleres de pasteleria</h3>
               <p class="card-aurora__text">Aprende a hacer nuestros clasicos: brownies, cookies y budines con ingredientes de estacion.</p>
               <a href="contacto.html" class="btn-aurora btn-aurora--outline">Consultar fechas</a>
             </div>
           </article>
-          <article class="card-aurora fade-in-up">
-            <img src="../img/local.jpg" class="card-aurora__img" alt="Espacio privado del cafe preparado para un evento">
+          <article class="card-aurora" data-aos="fade-up" data-aos-delay="300">
+            <img src="../img/evento.jpg" class="card-aurora__img" alt="Espacio privado del cafe preparado para un evento">
             <div class="card-aurora__body">
               <h3 class="card-aurora__title">Eventos privados</h3>
               <p class="card-aurora__text">Disponemos de un espacio para hasta 25 personas. Cumpleanos, reuniones y presentaciones con servicio de cafe.</p>
@@ -136,15 +142,15 @@
       <div class="container">
         <h2 class="section-title">Aurora en numeros</h2>
         <div class="grid-aurora grid-aurora--3cols stats-grid">
-          <div class="stat-card fade-in-up">
+          <div class="stat-card" data-aos="zoom-in">
             <span class="stat-card__number">3</span>
             <p class="stat-card__label">Anos sirviendo cafe</p>
           </div>
-          <div class="stat-card fade-in-up">
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="150">
             <span class="stat-card__number">5</span>
             <p class="stat-card__label">Origenes de cafe en carta</p>
           </div>
-          <div class="stat-card fade-in-up">
+          <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
             <span class="stat-card__number">12</span>
             <p class="stat-card__label">Eventos realizados</p>
           </div>
@@ -191,12 +197,15 @@
         </div>
       </div>
       <hr>
-      <p class="footer__copy">&copy; 2026 Cafe Aurora. Imagenes: Freepik. Musica: Pixabay.</p>
+      <p class="footer__copy">&copy; 2026 Cafe Aurora. Imagenes: Freepik y Pexels. Musica: Pixabay.</p>
     </div>
   </footer>
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- AOS init -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
 </body>
 </html>
